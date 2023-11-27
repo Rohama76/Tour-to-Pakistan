@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+
+}
+header{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(http://2.bp.blogspot.com/-t-e5P4i8jVY/UHEVid2IzsI/AAAAAAAAABg/t0oRkF5bSwI/s1600/Mazar-e-Quaid.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 18vh;
+    background:transparent;
+    color: blue;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+    flex-wrap: nowrap;
+}
+nav .logo{
+    margin-top: 2%;
+
+width: 25%;
+text-align: center;
+width: 15%;
+height: 5%;
+transition: width 2s, height 2s, transform 2s;
+
+}
+.logo:hover{
+    width: 50px;
+    height: 80px;
+    transform: rotate(180deg);
+}
+nav .menu{
+    margin-top: 2%;
+
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+}
+nav .menu{
+    color: #00b894;
+}
+.three{
+width: 100;
+height: 85vh;
+display: flex;
+justify-content: center;
+text-align: center;
+color: white;
+
+}
+.four{
+margin-top: 60px;
+}
+.four h3{
+    font-size:35px ;
+    font-weight: 200px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+
+}
+.four h1{
+    margin: 30px 0 20px 0;
+    font-size:55px ;
+    font-weight: 700px;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+
+
+}
+.four p{
+    margin-bottom: 25px;
+    font-size:25px ;
+    color: #eee;
+    font-weight: 700px;
+    text-shadow: 1px 1px 1px black;
+    word-spacing: 2px;
+
+}
+.four a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+.one{
+    background: white;
+    color: #000;
+}
+.one:hover{
+    background: #00b894;
+    color: white; 
+}
+.two:hover{
+    background: white;
+    color: #000;
+}
+.two{
+    background: #00b894;
+    color: white;
+}
+.change:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+
+}
+@keyframes changetext {
+         0%{content: "Karachi";} 
+         20%{content: "Lahore";}    
+
+         35%{content: "Peshawar";}    
+
+         55%{content: "Islamabad";}  
+         70%{content: "Multan";}    
+
+         85%{content: "Naran Kagan";}    
+
+         100%{content: "Khyber Pakhtun khawa";}    
+
+
+}
+
+.wow{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.we{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  
+}
+.red{
+    color: chocolate;
+    margin-top:20px;
+    box-shadow: 0 2px 4px rgba(177, 163, 120, 0.1); /* Adjust shadow */
+    transition: color 0.3s ease;
+}
+.red:hover{
+    background-color: #e6e6e6; 
+    transition: background-color 0.3s ease; /
+}
+.pink:hover{
+    background-color: #e6e6e6; 
+    transition: background-color 0.3s ease; /
+}
+.pink{
+    color: chocolate;
+    margin-top:70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+    transition: color 0.3s ease;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    
+  }
+  @media screen and (max-width: 767px) {
+  .wow {
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.we {
+    flex-direction: column;
+    justify-content: space-between;
+
+    }
+    .d {
+        width: 30%;
+        margin-top: 200px;
+ 
+    }
+   
+    .z {
+        width: 30%;
+        margin-top: 500px;
+ 
+    }
+   
+}
+@media screen and (min-width: 768px) {
+    .wow {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .we {
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 400px;
+    }
+
+    .d {
+        width: calc(33.33% - 10px);
+        max-height: none;
+    }
+    .z {
+        width: calc(33.33% - 10px);
+        max-height: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu.show{
+        display: flex;
+    }
+
+    .menu-links a {
+        margin: 0;
+        text-align: center;
+    }
+
+}
